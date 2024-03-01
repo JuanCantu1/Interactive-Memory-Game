@@ -42,3 +42,7 @@ This project is a controller for a training device to evaluate whether a test su
 In conclusion, the objective of designing and testing a digital state machine for a memory tester/trainer was successfully achieved in this project. By following the procedure for designing a state machine, we were able to develop a functional system that could evaluate a test subject's ability to correctly push a sequence of buttons. The system demonstrated the ability to move through different states, light up LEDs to indicate progress, detect incorrect inputs, deliver an electric shock for incorrect inputs (red LED), and dispense a cookie upon successful completion of the sequence (green LED). Overall, the project provided a valuable opportunity to apply theoretical knowledge of digital state
 machine design to a practical project. The experience gained in designing and implementing a
 complex system from scratch will prove useful in future endeavors
+
+# Video of Simulation Below
+
+https://github.com/JuanCantu1/Interactive-Memory-Game/assets/109363196/dd240580-4867-438e-92c9-bbd3936e269a
