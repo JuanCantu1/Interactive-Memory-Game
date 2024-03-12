@@ -45,4 +45,4 @@ complex system from scratch will prove useful in future endeavors
 
 # Video of Simulation Below
 
-https://github.com/JuanCantu1/Interactive-Memory-Game/assets/109363196/dd240580-4867-438e-92c9-bbd3936e269a
+https://github.com/JuanCantu1/Interactive-Memory-Game/assets/109363196/d8982bad-0f26-4cc5-ba4b-d4c58c1c8c89
