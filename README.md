@@ -12,7 +12,7 @@ This project is a controller for a training device to evaluate whether a test su
 
 # PART 1: UNDERSTAND THE REQUIREMENTS
 
-![Specifications ](https://github.com/JuanCantu1/Interactive-Memory-Game/assets/109363196/b2a0c278-594d-41b0-8ecc-5267aed840a4)
+![Specifications ](https://github.com/JuanCantu1/Interactive-Memory-Game/assets/109363196/cd277294-6076-44bd-b9d5-a9c94b363fe5)
 
 # PART 2: STATE GRAPH
 
