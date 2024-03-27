@@ -1,7 +1,7 @@
 ## Interactive Memory Game
 
 ### Introduction
-This project is a controller for a training device to evaluate whether a test subject (person or animal) can correctly push a sequence of buttons, in this case "ABAABBABABA". If the subject correctly completes the sequence, a cookie will be dispensed. If the subject makes an error, an electric shock is delivered, and they must go back to the beginning. In this project, the cookie dispenser and the shocking device will be simulated by lighting LEDs
+This project is a controller for a training device to evaluate whether a test subject (person or animal) can correctly push a sequence of buttons, in this case "ABAABBABABA". If the subject correctly completes the sequence, a cookie will be dispensed. If the subject makes an error, an electric shock is delivered, and they must go back to the beginning. In this project, the cookie dispenser and the shocking device will be simulated by lighting LEDs.
 
 ### Circuit Behavior
 1. The system should start in the “ready to start” status, with no LEDs on. It should stay in ready status until one of the inputs is activated.
