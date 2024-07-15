@@ -46,3 +46,22 @@ complex system from scratch will prove useful in future endeavors.
 # Video of Simulation Below
 
 https://github.com/JuanCantu1/Interactive-Memory-Game/assets/109363196/d8982bad-0f26-4cc5-ba4b-d4c58c1c8c89
+
+--- 
+
+# Continuation: Verilog HDL Implementation (In Progress)
+I am now revisiting this project and doing a Verilog HDL implementation. The implementation aims to replicate the functionality using digital logic and FPGA technology on the DE1-SoC board.
+
+# PART 8 
+- Detailed description of the Verilog modules used, including state machines, input handling, and LED control.
+  
+# PART 9
+- Steps for integrating and configuring the Verilog design on the DE1-SoC FPGA board.
+  
+# PART 10
+- Procedures for testing the Verilog implementation on the DE1-SoC board, ensuring correct functionality and performance.
+
+# Demonstation
+Link of demo will go here
+
+# Conclusion
