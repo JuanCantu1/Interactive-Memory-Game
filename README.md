@@ -56,41 +56,27 @@ I am now revisiting this project and doing a Verilog HDL implementation. The imp
 # PART 8 
 The Verilog implementation includes two Verilog files:
 
-1. TopModule.v
+## 1. TopModule.v
+
 This file contains the main design of the circuit. It includes the following modules:
 
-jkFlipFlop: This module implements a JK flip-flop, a type of bistable multivibrator. It has inputs j and k for the JK inputs, clk for the clock signal, and outputs q0 and q1. The flip-flop changes state based on the values of j and k at the rising edge of the clock.
+- **jkFlipFlop**: This module implements a JK flip-flop, a type of bistable multivibrator. It has inputs `j` and `k` for the JK inputs, `clk` for the clock signal, and outputs `q0` and `q1`. The flip-flop changes state based on the values of `j` and `k` at the rising edge of the clock.
 
-InputFlipFlop: This module uses four JK flip-flops to create a sequence generator based on the inputs X1 and X2. It generates four outputs Q1, Q2, Q3, and Q4 which are the states of the flip-flops. The logic for the JK inputs of each flip-flop is defined within this module.
+- **InputFlipFlop**: This module uses four JK flip-flops to create a sequence generator based on the inputs `X1` and `X2`. It generates four outputs `Q1`, `Q2`, `Q3`, and `Q4` which are the states of the flip-flops. The logic for the JK inputs of each flip-flop is defined within this module.
 
-OutputFlipFlop: This module takes the outputs from the InputFlipFlop (Q1, Q2, Q3, Q4) and generates twelve outputs (Z1 to Z12) based on the given logic. These outputs represent the different states and combinations derived from the input flip-flops.
+- **OutputFlipFlop**: This module takes the outputs from the `InputFlipFlop` (`Q1`, `Q2`, `Q3`, `Q4`) and generates twelve outputs (`Z1` to `Z12`) based on the given logic. These outputs represent the different states and combinations derived from the input flip-flops.
 
-TopModule: This is the top-level module that instantiates the InputFlipFlop and OutputFlipFlop modules. It connects the inputs and outputs appropriately and serves as the main interface for the overall circuit.
+- **TopModule**: This is the top-level module that instantiates the `InputFlipFlop` and `OutputFlipFlop` modules. It connects the inputs and outputs appropriately and serves as the main interface for the overall circuit.
 
-2. tb_TopModule.v
-This file contains the testbench for the TopModule. It is used to simulate and verify the behavior of the circuit. The testbench applies a sequence of test vectors to ensure the design works as expected. Specifically, it:
+## 2. tb_TopModule.v
 
-Instantiates the TopModule.
-Provides clock and input signals (X1 and X2) to the TopModule.
-Monitors the outputs (Z1 to Z12) and checks for the correct behavior based on the input sequences.
-The testbench includes a sequence of input changes to thoroughly test the circuit:
+This file contains the testbench for the `TopModule`. It is used to simulate and verify the behavior of the circuit. The testbench applies a sequence of test vectors to ensure the design works as expected. Specifically, it:
 
-X1=1, X2=0
-X1=0, X2=1
-X1=1, X2=0
-X1=1, X2=0
-X1=0, X2=1
-X1=0, X2=1
-X1=1, X2=0
-X1=0, X2=1
-X1=1, X2=0
-X1=0, X2=1
-X1=1, X2=0
-X1=0, X2=0
-X1=0, X2=0
-X1=0, X2=0
+- Instantiates the `TopModule`.
+- Provides clock and input signals (`X1` and `X2`) to the `TopModule`.
+- Monitors the outputs (`Z1` to `Z12`) and checks for the correct behavior based on the input sequences.
 
-This sequence ensures that various combinations and transitions are tested, verifying the correct functionality of the circuit.
+The testbench includes a sequence of input changes to thoroughly test the circuit. The sequence ensures that various combinations and transitions are tested, verifying the correct functionality of the circuit.
   
 # PART 9
 - Steps for integrating and configuring the Verilog design on the DE1-SoC FPGA board.
