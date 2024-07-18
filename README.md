@@ -49,7 +49,7 @@ https://github.com/JuanCantu1/Interactive-Memory-Game/assets/109363196/d8982bad-
 
 ## Continuation: Verilog HDL Implementation (In Progress)
 
-I am now revisiting this project and doing a Verilog HDL implementation. The implementation aims to replicate the functionality using digital logic and FPGA technology on 'Specified FPGA board.'
+I am now revisiting this project and doing a Verilog HDL implementation. The implementation aims to replicate the functionality using digital logic and FPGA technology on the Nexys A7-100T.
 
 ### PART 8: Verilog Implementation
 
@@ -67,6 +67,8 @@ This file contains the main design of the circuit. It includes the following mod
 
 - **TopModule**: This is the top-level module that instantiates the `InputFlipFlop` and `OutputFlipFlop` modules. It connects the inputs and outputs appropriately and serves as the main interface for the overall circuit.
 
+- **ClockDivider**: This module divides the input clock to a slower clock. This is used to slow down the clock signal for the flip-flops to a suitable frequency for observation.
+
 #### 2. tb_TopModule.v
 
 This file contains the testbench for the `TopModule`. It is used to simulate and verify the behavior of the circuit. The testbench applies a sequence of test vectors to ensure the design works as expected. Specifically, it:
@@ -79,11 +81,11 @@ The testbench includes a sequence of input changes to thoroughly test the circui
 
 ### PART 9: Integrating and Configuring the Verilog Design
 
-Steps for integrating and configuring the Verilog design on the 'Specified FPGA board.'
+Steps for integrating and configuring the Verilog design on the Nexys A7-100T.
 
 ### PART 10: Testing the Verilog Implementation
 
-Procedures for testing the Verilog implementation on the 'Specified FPGA board,' ensuring correct functionality and performance.
+Procedures for testing the Verilog implementation on the Nexys A7-100T ensuring correct functionality and performance.
 
 ### Demonstration
 
