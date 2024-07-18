@@ -79,16 +79,18 @@ This file contains the testbench for the `TopModule`. It is used to simulate and
 
 The testbench includes a sequence of input changes to thoroughly test the circuit. The sequence ensures that various combinations and transitions are tested, verifying the correct functionality of the circuit.
 
-### PART 9: Integrating and Configuring the Verilog Design
+### PART 9: Testing the Verilog Implementation
+
+Testbench simulation is shown below.
+
+![MemoryGame tb_Simulation](https://github.com/user-attachments/assets/2295ef2d-f3a3-4ba6-8b9b-13acc80ebf2f)
+
+### PART 10: Integrating and Configuring the Verilog Design
 
 Steps for integrating and configuring the Verilog design on the Nexys A7-100T.
 
-### PART 10: Testing the Verilog Implementation
-
-Procedures for testing the Verilog implementation on the Nexys A7-100T ensuring correct functionality and performance.
-
 ### Demonstration
 
-Link to the demo will go here.
+https://github.com/user-attachments/assets/e427483d-0235-4269-9ce8-f86821ad96e8
 
 ### Conclusion
