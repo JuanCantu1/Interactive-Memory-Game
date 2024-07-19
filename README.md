@@ -55,7 +55,7 @@ I am now revisiting this project and doing a Verilog HDL implementation. The imp
 
 The Verilog implementation includes two Verilog files:
 
-#### 1. TopModule.v
+#### 1. MemoryGame.v
 
 This file contains the main design of the circuit. It includes the following modules:
 
@@ -69,7 +69,7 @@ This file contains the main design of the circuit. It includes the following mod
 
 - **ClockDivider**: This module divides the input clock to a slower clock. This is used to slow down the clock signal for the flip-flops to a suitable frequency for observation.
 
-#### 2. tb_TopModule.v
+#### 2. tb_MemoryGame.v
 
 This file contains the testbench for the `TopModule`. It is used to simulate and verify the behavior of the circuit. The testbench applies a sequence of test vectors to ensure the design works as expected. Specifically, it:
 
