@@ -3,14 +3,14 @@ module ClockDivider (
     input wire reset,
     output reg clk_out
 );
-    reg [24:0] counter;  // Adjust the counter width to fit the desired clock frequency
+    reg [24:0] counter;
 
     always @(posedge clk_in or posedge reset) begin
         if (reset) begin
             counter <= 0;
             clk_out <= 0;
         end else begin
-            if (counter == 25_000_000 - 1) begin  // Assuming clk_in is 50MHz, divide by 25,000,000 to get 1Hz
+            if (counter == 25_000_000 - 1) begin 
                 counter <= 0;
                 clk_out <= ~clk_out;
             end else begin
@@ -34,15 +34,15 @@ always @(posedge clk or posedge reset) begin
         q0 <= 0;
     else begin
         case ({j, k})
-            2'b00: q0 <= q0;        // No change
-            2'b01: q0 <= 1'b0;      // Reset
-            2'b10: q0 <= 1'b1;      // Set
-            2'b11: q0 <= ~q0;       // Toggle
+            2'b00: q0 <= q0;
+            2'b01: q0 <= 1'b0;
+            2'b10: q0 <= 1'b1;
+            2'b11: q0 <= ~q0;
         endcase
     end
 end
 
-assign q1 = ~q0; // Complementary output
+assign q1 = ~q0;
 
 endmodule
 
@@ -146,7 +146,7 @@ assign c1 = slow_clk;
 
 // Instantiate input flip-flop module
 InputFlipFlop inputFF (
-    .clk(slow_clk),  // Use the slow clock signal
+    .clk(slow_clk),
     .reset(reset),
     .X1(X1),
     .X2(X2),
