@@ -47,7 +47,7 @@ https://github.com/JuanCantu1/Interactive-Memory-Game/assets/109363196/d8982bad-
 
 ---
 
-## Continuation: Verilog HDL Implementation (In Progress)
+## Continuation: Verilog HDL Implementation
 
 I am now revisiting this project and doing a Verilog HDL implementation. The implementation aims to replicate the functionality using digital logic and FPGA technology on the Nexys A7-100T.
 
