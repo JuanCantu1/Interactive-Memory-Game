@@ -87,10 +87,31 @@ Testbench simulation is shown below.
 
 ### PART 10: Integrating and Configuring the Verilog Design
 
-Steps for integrating and configuring the Verilog design on the Nexys A7-100T.
+The final step involves integrating the Verilog design onto the Nexys A7-100T FPGA and ensuring it operates correctly in the hardware environment. Here are the steps taken to achieve this:
+
+1. **Create the Constraints File**:
+   - A constraints file (`.xdc`) was created to map the design’s input and output signals to the physical pins on the Nexys A7-100T board. This file ensures that the FPGA’s I/O pins are correctly assigned to the circuit’s inputs (`X1`, `X2`) and outputs (`Z1` to `Z12`).
+
+2. **Synthesize the Design**:
+   - The Verilog files were imported into Xilinx Vivado.
+   - The design was synthesized, converting the high-level Verilog code into a gate-level netlist.
+
+3. **Implement the Design**:
+   - The synthesized design was then implemented, where Vivado maps the netlist onto the FPGA's resources.
+   - The implementation process includes placement and routing, ensuring the design meets the necessary timing and resource constraints.
+
+4. **Generate the Bitstream**:
+   - After a successful implementation, the bitstream file (`.bit`) was generated. This file contains the binary data used to configure the FPGA.
+
+5. **Upload the Bitstream**:
+   - The generated bitstream was uploaded to the Nexys A7-100T board using Vivado. This step configures the FPGA to perform the designed operations.
+   
+6. **Testing on Hardware**:
+   - With the bitstream successfully uploaded, the hardware setup was tested.
+   - Input signals (`X1`, `X2`) were applied, and the corresponding outputs (`Z1` to `Z12`) were observed to verify that the design works correctly in the physical environment.
+
+By following these steps, the Verilog HDL implementation was successfully integrated and tested on the Nexys A7-100T FPGA, ensuring the project’s functionality using digital logic and FPGA technology.
 
 ### Demonstration
 
 https://github.com/user-attachments/assets/e427483d-0235-4269-9ce8-f86821ad96e8
-
-### Conclusion
