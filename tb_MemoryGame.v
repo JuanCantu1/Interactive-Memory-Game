@@ -29,7 +29,7 @@ module tb_TopModule;
   // Generate clock signal
   initial begin
     clk = 0;
-    forever #5 clk = ~clk; // Clock period of 10 picoseconds
+    forever #5 clk = ~clk;
   end
 
   // Stimulate inputs
