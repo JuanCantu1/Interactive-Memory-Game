@@ -1,7 +1,4 @@
-## This file is .xdc for the Nexys A7-50T
-## To use it in a project:
-## - uncomment the lines corresponding to used pins
-## - rename the used ports (in each line, after get_ports) according to the top level signal names in the project
+## This file is .xdc for the Nexys A7-50T for this project.
 
 ## Clock signal
 set_property -dict { PACKAGE_PIN E3 IOSTANDARD LVCMOS33 } [get_ports {clk} ]
