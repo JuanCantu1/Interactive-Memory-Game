@@ -10,7 +10,7 @@ module ClockDivider (
             counter <= 0;
             clk_out <= 0;
         end else begin
-            if (counter == 25_000_000 - 1) begin  // Assuming clk_in is 50MHz, divide by 25,000,000 to get 1Hz
+            if (counter == 25_000_000 - 1) begin  // Divide by 25,000,000 to get 1Hz
                 counter <= 0;
                 clk_out <= ~clk_out;
             end else begin
